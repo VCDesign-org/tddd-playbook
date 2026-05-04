@@ -98,6 +98,19 @@ todo/
 
 Do **not** let it decide.
 
+### Relationship to Agent Plans
+
+Plans held by agents such as Claude Code, Copilot Agent, and Antigravity
+are different from TDDD TODOs.
+
+- TDDD TODOs: records of decisions, boundaries, and stop conditions
+- Agent Plans: work plans for execution
+
+Agent Plans may be used as lower-level plans for executing TODOs.
+But Agent Plans must not replace TODOs.
+
+The source of decisions always stays on the TODO side.
+
 ### 2-1. Large Systems Are “One Boundary, One Project”
 
 - Separate repositories or folders per boundary
@@ -129,6 +142,28 @@ Procedure:
 2. Execute
 3. Confirm what differs from expectations
 4. Fix it in the next phase
+
+---
+
+## 2.5 Files for Receiving Execution Results
+
+Execution-phase AI operation must not end with implementation alone.
+It should leave results in a form humans can receive, judge, and return to the next production step.
+
+In the Advanced Guide, use the following files as needed.
+
+```text
+todo/
+  ├─ TODO.md      # Decisions, boundaries, implementation target
+  ├─ CHECK.md     # Conditions to verify after execution
+  ├─ RESULT.md    # Agent execution results, diffs, unresolved points
+  └─ NEXT.md      # The next decision made by humans
+```
+
+Agents may write RESULT.md.
+Humans decide and write NEXT.md.
+
+Agents must not create or update NEXT.md on their own.
 
 ---
 

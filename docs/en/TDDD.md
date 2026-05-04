@@ -46,6 +46,23 @@ TDDD is designed around this **separation of decisions and implementation**.
 
 ---
 
+## What to Draw Before Implementation
+
+In TDDD, you do not start building immediately.
+
+Before implementation, write at least the following as TODOs:
+
+- This cycle’s purpose
+- This cycle’s boundary
+- What not to do this time
+- What to verify after execution
+- Conditions for returning to the next decision
+
+Not every detail has to be decided in advance.
+But implementation must not start without first drawing the large loop.
+
+---
+
 ## The Four TDDD Loops
 
 Even when one tool, such as Claude Code or Copilot Agent, handles both roles,

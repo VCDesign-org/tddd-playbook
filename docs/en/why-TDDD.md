@@ -160,6 +160,21 @@ but **decisions written as preconditions for execution**.
 
 ---
 
+## Why Not Build Immediately
+
+Generative AI starts building as soon as it is asked.
+
+But in TDDD, you do not build immediately.
+First decide how far to build, where not to go, and what to verify before returning.
+
+This is not to slow development down.
+Because implementation has become fast, the frame of decisions must be fixed first.
+
+The faster building becomes,
+the more important it is to stop before building.
+
+---
+
 ## Why an Annual Edition
 
 TDDD depends on the current tool structure.

@@ -72,6 +72,18 @@ todo/
 
 Add more files here if needed.
 
+At first, `TODO.md` alone is enough.
+
+Once you get used to it, you may separate verification conditions into `CHECK.md`.
+
+```text
+todo/
+├─ TODO.md
+└─ CHECK.md
+```
+
+Write in CHECK.md what humans should look at after implementation.
+
 ---
 
 ## Step 3: Make the AI Execute the TODOs

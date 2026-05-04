@@ -3,3 +3,5 @@ repomix-output.txt
 .DS_Store
 docs/.DS_Store
 .claude/
+TODO.md
+repomix.config.json

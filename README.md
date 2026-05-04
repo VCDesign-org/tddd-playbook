@@ -27,6 +27,21 @@ TDDD is
 
 ---
 
+## What TDDD Is Not
+
+The following are not TDDD:
+
+- Asking AI to “roughly build it”
+- Starting implementation without TODOs
+- Letting AI expand the scope during implementation
+- Treating an Agent Plan itself as the basis for decisions
+- Continuing fixes based only on implementation results without updating TODOs
+
+In TDDD, purpose, boundaries, non-goals, and verification conditions are written as TODOs before implementation.
+Implementation produced without this frame is not treated as a TDDD deliverable.
+
+---
+
 ## Why This Is Recorded
 
 With the spread of generative AI, the assumptions of development changed.
