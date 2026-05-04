@@ -17,7 +17,7 @@ and the focus is on “how to avoid accidents.”
 
 ### Method Premise
 
-**Conversational AI and automated code-generation AI still have clearly different roles**
+**Decision and execution phases must be consciously separated, even when using the same tool**
 
 The TDDD Advanced Guide is built only on these two premises.
 
@@ -27,17 +27,20 @@ The TDDD Advanced Guide is built only on these two premises.
 
 The Advanced Guide loops through three phases.
 
-1. Create TODOs with conversational AI
-2. Make automated AI execute the TODOs
+1. Create TODOs through decision-phase AI operation
+2. Execute TODOs through execution-phase AI operation
 3. Review and return to TODOs
 
 Repeat.
 
 ---
 
-## 1. Create TODOs with Conversational AI
+## 1. Create TODOs Through Decision-Phase AI Operation
 
 This is the **most important step**.
+
+Even when using the same tool, such as Claude Code design mode,
+keep this phase focused on decisions, not implementation.
 
 ### 1-1. Make It Understand the Spec
 
@@ -68,7 +71,7 @@ Example:
 
 ### 1-3. Create TODOs Within the Boundary
 
-Ask the conversational AI like this:
+Ask through decision-phase AI operation:
 
 Within this boundary only, create implementation TODOs.  
 Make explicit what we will not do.
@@ -91,7 +94,7 @@ todo/
 
 ---
 
-## 2. Make Automated AI Execute the TODOs
+## 2. Execute TODOs Through Execution-Phase AI Operation
 
 Do **not** let it decide.
 
@@ -105,7 +108,7 @@ It is a defense against AI limits.
 
 ### 2-2. Make the TODO Folder the Only Source of Truth
 
-Always instruct the automated AI:
+Always instruct the execution-phase AI operation:
 
 Using only the contents of the `todo` folder,  
 implement in xx language.  
@@ -131,7 +134,7 @@ Procedure:
 
 ## 3. Review and Re-TODO
 
-### 3-1. If Possible, Refactor with a Different Automated AI
+### 3-1. If Possible, Refactor Through a Different Execution-Phase AI Operation
 
 Purpose:
 
@@ -141,7 +144,7 @@ Purpose:
 
 Adding tests from a “different perspective” rarely matters.
 
-### 3-2. Have the Original Conversational AI Review
+### 3-2. Review Through the Original Decision-Phase AI Operation
 
 - Does this implementation satisfy the TODO?
 - Did it cross any boundaries?
@@ -194,8 +197,8 @@ These require different design.
 
 ## Summary
 
-- Decisions are made with conversational AI
-- Implementation is delegated to automated AI
+- Decisions are made through decision-phase AI operation
+- Implementation is delegated to execution-phase AI operation
 - Cut by boundaries, connect loosely
 - Do not erase TODOs
 
@@ -279,7 +282,7 @@ Examples:
 
 TDDD handling:
 - Write them as constraints in TODOs
-- Do not let automated AI decide
+- Do not make decisions in the execution phase
 - If needed, turn checks into TODO tests
 
 ---
@@ -297,7 +300,7 @@ Examples:
 - Meaning of money/quantity
 
 TDDD handling:
-- Always decide with conversational AI + humans
+- Humans always decide through decision-phase AI operation
 - Record decisions in TODOs
 - Implementation only “executes” the decisions
 

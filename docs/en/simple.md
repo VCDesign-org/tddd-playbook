@@ -12,10 +12,10 @@ It only explains how to build something that doesn’t break easily.
 
 ## Assumptions
 
-- You can write a little Python
 - You roughly know what you want to build
-- But you are not good at design or decomposition
-- You use generative AI (ChatGPT / Copilot, etc.)
+- You are not good at design or decomposition
+- You use generative AI (ChatGPT / Claude / Copilot, etc.)
+- You use VSCode (it is fine if you cannot write HTML or Python)
 
 That is enough.
 
@@ -46,7 +46,7 @@ Repeat this.
 
 ### What to Do
 
-Ask the conversational AI like this:
+Ask through decision-phase AI operation:
 
 Please create TODOs for what I want to build.  
 Organize them, including what we will not do.
@@ -76,14 +76,15 @@ Add more files here if needed.
 
 ## Step 3: Make the AI Execute the TODOs
 
-Ask the code-generation AI like this:
+Ask through execution-phase AI operation:
 
-Please implement in Python based on `todo/TODO.md`.  
+Please build a web page with HTML and CSS based on `todo/TODO.md`.
 Do not implement anything that is not written in the TODO.
 
 ### Important
 
 - **Do not let it implement based on anything other than the TODO**
+- Specify the language and tools in the TODO
 - If it starts filling in on its own, stop it
 
 ---
@@ -115,12 +116,15 @@ Example:
 
 ```md
 - [ ] When input is empty, it errors. I want it to return an empty result instead.
+```
 
 ## Step 6: Have It Implement Again
 
 Give the same instruction.
 
+```md
 Please modify the implementation based on the updated TODO.md.
+```
 
 Repeat this:
 
@@ -133,4 +137,3 @@ Verify
 Fix TODOs
 
 That’s all.
-```

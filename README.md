@@ -5,6 +5,9 @@
 TDDD (TODO Driven Development) is a record of a **practical development operating method**
 for a specific era’s generative‑AI environment.
 
+> This document is not a tutorial for building web pages.
+> TDDD is a development operating method for leaving decisions in TODOs.
+
 It does not propose new ideology or design theory.
 
 ---
@@ -61,7 +64,7 @@ It is appropriate to keep it as an **annual operating manual**.
   Minimal steps you can use even without confidence in your decisions
 
 - `応用編.md`  
-  Practical version including boundaries, rebuild assumptions, and AI role separation
+  Practical version including boundaries, rebuild assumptions, and AI phase separation
 
 ---
 
@@ -79,8 +82,8 @@ TDDD **assumes higher‑level concepts but does not contain them**.
 
 In the future, if:
 
-- IDE AI fully integrates conversation and implementation, and
-- TODO creation and implementation become one
+- IDE AI further integrates design mode and implementation mode, and
+- the way TODO creation and implementation are switched changes
 
 then TDDD’s form may change, or it may become unnecessary.
 

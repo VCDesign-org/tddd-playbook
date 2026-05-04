@@ -9,9 +9,9 @@ that runs the entire process around TODOs.
 Specs, design, implementation, and review are all **aggregated into TODOs**,  
 and development is defined as “a loop of creating, executing, and updating TODOs.”
 
-This method is recorded as an **annual edition** because it assumes  
-the current separation of conversational AI, automated code‑generation AI,  
-and IDE‑integrated AI tools.
+This method is recorded as an **annual edition** because it assumes
+that even within the same tool, users consciously switch between
+**design mode (decision)** and **implementation mode (execution)**.
 
 ---
 
@@ -48,7 +48,10 @@ TDDD is designed around this **separation of decisions and implementation**.
 
 ## The Four TDDD Loops
 
-### Loop A: Create TODOs (Conversational AI + Humans)
+Even when one tool, such as Claude Code or Copilot Agent, handles both roles,
+TDDD separates the phases intentionally.
+
+### Loop A: Create TODOs (Decision Phase + Humans)
 
 **Purpose**
 - Understand the spec
@@ -67,7 +70,7 @@ TDDD is designed around this **separation of decisions and implementation**.
 
 ---
 
-### Loop B: Execute TODOs (Automated AI)
+### Loop B: Execute TODOs (Execution Phase)
 
 **Purpose**  
 - Mechanical implementation based on TODOs
@@ -101,14 +104,14 @@ TDDD is designed around this **separation of decisions and implementation**.
 
 ---
 
-### Loop D: Review and Re‑TODO (Conversational AI)
+### Loop D: Review and Re‑TODO (Decision Phase)
 
 **Purpose**  
 - Fix learning
 - Improve the next loop’s accuracy
 
 **Main work**
-- Have conversational AI review the implementation
+- Review the implementation through decision-phase AI operation
 - Convert feedback into TODOs
 - Record design decisions briefly
 
@@ -130,9 +133,9 @@ TDDD is designed around this **separation of decisions and implementation**.
 
 TDDD **depends strongly on tool structure**.
 
-- Assumes separation of conversational AI and automated AI
-- If IDE AI integrates both,  
-  Loop A and Loop B are likely to merge
+- Assumes conscious switching between design mode (decision) and implementation mode (execution), even within one tool
+- Even if IDE AI integrates both,
+  Loop A and Loop B are handled as separate phases
 
 For that reason, this document is the **2026 Edition**.
 

@@ -164,14 +164,14 @@ but **decisions written as preconditions for execution**.
 
 TDDD depends on the current tool structure.
 
-- Conversational AI
-- Automated code‑generation AI
+- Decision-phase AI operation
+- Execution-phase AI operation
 - IDE‑integrated AI support
 
-If these are integrated,  
-TODO creation and implementation will merge.
+Even if these are integrated into the same tool,
+TODO creation and implementation still need to be consciously separated.
 
-At that time, TDDD’s shape will change.
+When tool reality changes, TDDD’s shape will change.
 
 So this is not an eternal theory.  
 **It is a driving method matched to the reality of the year.**
